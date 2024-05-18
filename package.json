@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "big-integer": "^1.6.52",
+    "crypto": "^1.0.1"
+  }
+}
