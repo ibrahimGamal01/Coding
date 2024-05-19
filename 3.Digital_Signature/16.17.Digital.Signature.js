@@ -42,6 +42,8 @@ console.log(`Decrypted message: ${m}`);
 console.log(`Decrypted signature: ${s}`);
 console.log(`Verification result: ${verify.equals(m) ? "Valid signature" : "Invalid signature"}`);
 
+// ----------------------------------------------
+console.log("\nTask 17: Given new primes for Bob\n");
 // Task 17: Given new primes for Bob
 const pB_new = bigInt("7865712896579");
 const qB_new = bigInt("8495789457893457345793");

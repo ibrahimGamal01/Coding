@@ -11,9 +11,8 @@
 
 //  b. What could Paul Revere’s friend have done so that we couldn’t guess
 //  which message was encrypted?
-//  Answer: Paul Revere’s friend could have used padding schemes such as Optimal Asymmetric Encryption Padding (OAEP).
-//          This adds randomness to the plaintext before encryption, making it difficult to guess the message even if the ciphertexts
-//          for small plaintexts are known.
+//  Answer: Paul Revere's friend could have added random padding to the plaintext before encryption,
+//          ensuring that the ciphertext varies even for the same message.
 
 const bigInt = require('big-integer'); // Import the big-integer library for handling large integers
 
