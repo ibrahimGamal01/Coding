@@ -1,3 +1,4 @@
+// 13.MissingDigit.js
 // Coding Task Suppose that p = 76543692179, q = 343434343453, and e = 457.
 //  The ciphertext c ≡ me (mod pq) is transmitted, but an error occurs during
 //  transmission. The received ciphertext is 2304329328016936947195. The
@@ -24,10 +25,10 @@ function mod_inv(a, p) {
 
 // Function to find the missing digit and decrypt the message
 function findMissingDigitAndDecrypt(receivedCiphertext, e, n) {
-    for (let d = 0; d < 10; d++) {
+    for (let d = 0; d < 10; d++) { //try digits 0-9 
         // Append the missing digit to the ciphertext
         const ciphertext = receivedCiphertext.multiply(10).add(d);
-        for (let m = 0; m < 1000; m++) { // Brute force small range for simplicity
+        for (let m = 0; m < 1000; m++) { // Try plaintexts 0-999 and check for equality with the ciphertext
             if (bigInt(m).modPow(e, n).equals(ciphertext)) {
                 return { missingDigit: d, plaintext: m }; // Return the missing digit and plaintext
             }
