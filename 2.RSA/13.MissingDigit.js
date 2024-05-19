@@ -1,5 +1,5 @@
 // 13.MissingDigit.js
-// Coding Task Suppose that p = 76543692179, q = 343434343453, and e = 457.
+//  Coding Task Suppose that p = 76543692179, q = 343434343453, and e = 457.
 //  The ciphertext c ≡ me (mod pq) is transmitted, but an error occurs during
 //  transmission. The received ciphertext is 2304329328016936947195. The
 //  receiver is able to determine that the digits received are correct but that last digit

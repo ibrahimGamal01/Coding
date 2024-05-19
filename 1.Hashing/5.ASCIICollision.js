@@ -1,4 +1,4 @@
-// Coding Task Write a function birthday1() that returns a tuple (s; t; n); where s
+// 5. Coding Task Write a function birthday1() that returns a tuple (s; t; n); where s
 // and t are different ASCII strings whose SHA-1 hashes have the same high-order
 // 40 bits (same 10 initial hex digits). The last component n of the return value is the
 // number of calls to SHA-1. Again, you can generate random ASCII strings by
@@ -32,10 +32,10 @@ function birthdayAttack() {
     const hashes = {}; // Dictionary to store hashes and corresponding strings
     let n = 0; // Number of SHA-1 calls
 
-    while (true) {
-        const s = randomString();
-        const hash = sha1First40Bits(s);
-        n++;
+    while (true) { // loop over the hashes and calculate the hash string
+        const s = randomString(); 
+        const hash = sha1First40Bits(s); // 
+        n++; // num of calls+9++++++++++++++++++++++++
         if (hashes[hash]) {
             const t = hashes[hash];
             return { s, t, n }; // Return the colliding strings and number of SHA-1 calls

@@ -14,6 +14,13 @@
  * - Alternatively, if Bob's primes change, he must communicate the new public key (nB_new, eB) to Alice, and she must use this new key for encryption.
  */
 
+// m: is the decrypted message m1^dB
+// s: is the decrypted signature s1^dB
+// dB: is the private key exponent (modular multiplicative inverse)
+// verify: is the verification result of the signature
+
+
+
 const bigInt = require('big-integer');
 
 // Given parameters

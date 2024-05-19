@@ -7,15 +7,15 @@
 //  receives the ciphertext 273095689186.
 //  a. What was the plaintext? Answer this without factoring n.
 
-
+// Determine the original plaintext message that was encrypted using RSA with n = 712446816787 and e = 6551, 
+// resulting in the ciphertext 273095689186, without factoring n.
 
 //  b. What could Paul Revere’s friend have done so that we couldn’t guess
 //  which message was encrypted?
 //  Answer: Paul Revere's friend could have added random padding to the plaintext before encryption,
 //          ensuring that the ciphertext varies even for the same message.
 
-const bigInt = require('big-integer'); // Import the big-integer library for handling large integers
-
+const bigInt = require('big-integer'); 
 // Function to decrypt the RSA ciphertext
 function decryptRSA(ciphertext, e, n) {
     // Try plaintext values m = 1 and m = 2
